@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <title>Contact Details</title>
+	 <link rel="stylesheet" href="CSS/style.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.1.0/react-dom.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<ul class="topnav">
+	    <li><a href="/test">Home</a></li>
+	    <li><a href="/index">Registration</a></li>
+	    <li><a href="/event_schedule">Event Schedule</a></li>
+	    <li><a href="/event_guidelines">Event Guidelines</a></li>
+	    <li><a class="active" href="#contact_details">Contact Details</a></li>
+	</ul>
+	<div class="intro">
+		<h1>Intra-College Sports Tournament</h1>
+		<h2>Contact Details</h2>
+		<p>Contact:
+		Edison Mathew,<br>
+		Coordinator of Sports Tournament,<br>
+		St.Mary's University,<br>
+		1, Santa Maria, San Antonio, TX - 78228<br>
+		Ph.no - 210-345-6543<br>
+		Email-ID - mathew@stmarytx.edu<br></p>
+		<p> you can post your query in the message and we will contact you within 24 hours</p>
+	</div>
+	<form action="/insert_one" method="post">
+  	<div>
+    	<label class="desc" id="title1" for="Field1">First Name</label>
+    	<div>
+      		<input id="Field1" name="FirstName" type="text" class="field text fn" value="" size="8" tabindex="1">
+    	</div>
+  	</div>
+  	<div>
+    <label class="desc" id="title1" for="Field1">Last Name</label>
+    	<div>
+      		<input id="Field1" name="LastName" type="text" class="field text fn" value="" size="8" tabindex="1">
+    	</div>
+  	</div>
+  	<div>
+    	<label class="desc" id="title3" for="Field3">
+      	Email-ID
+    	</label>
+    	<div>
+      		<input id="Field3" name="email" type="email" spellcheck="false" value="" maxlength="255" tabindex="3"> 
+   		</div>
+  	</div>
+  	<div>
+    <label class="desc" id="title1" for="Field1">Comment</label>
+    	<div>
+      		<input id="Field1" name="Comment" type="text" class="field text fn" value="" size="8" tabindex="1">
+    	</div>
+  	</div>
+  	<div>
+    <div>
+      <input id="saveForm" name="saveForm" type="submit" value="Submit">
+    </div>
+  </div>
+</body>
+</html>

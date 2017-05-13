@@ -1,0 +1,41 @@
+<h3>Get Data</h3>
+    <a href="/get-data">LOAD DATA</a>
+    <div>
+        <article>
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Sporting Event</th>
+                    <th>Under Category</th>
+                    <th>TeamSize</th>
+                    <th>StudentID</th>
+                    <th>Contact</th>
+                    <th>EmailID</th>
+                    <th>ID</th>
+                </tr>
+                {{# each items }}
+                    <tr>
+                        <td>{{ this.FirstName }}</td>
+                        <td>{{ this.LastName }}</td>
+                        <td>{{ this.Age }}</td>
+                        <td>{{ this.Gender }}</td>
+                        <td>{{ this.SportingEvent }}</td>
+                        <td>{{ this.UnderCategory }}</td>
+                        <td>{{ this.TeamSize }}</td>
+                        <td>{{ this.Student_ID }}</td>
+                        <td>{{ this.Contact }}</td>
+                        <td>{{ this.email }}</td>
+                        <td>{{ this._id }}</td>
+                    </tr>
+                {{/each}}
+            </table>
+        </article>
+    </div>
+
+
+
+
+   
